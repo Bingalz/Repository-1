@@ -1,0 +1,203 @@
+Last login: Wed Aug 30 14:27:43 on ttys000
+bingalz@Brandons-Air ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+
+Press RETURN/ENTER to continue or any other key to abort:
+bingalz@Brandons-Air ~ %   git config --global user.name Bingalz              
+bingalz@Brandons-Air ~ % git config --global user.password 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
+bingalz@Brandons-Air ~ % git config --global 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
+error: key does not contain a section: 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
+bingalz@Brandons-Air ~ % git config --global user.password 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
+bingalz@Brandons-Air ~ % $ brew install git
+zsh: command not found: $
+bingalz@Brandons-Air ~ % $ sudo port install git
+zsh: command not found: $
+bingalz@Brandons-Air ~ % sudo port install git
+Password:
+sudo: port: command not found
+bingalz@Brandons-Air ~ % xcode-select --install
+xcode-select: error: command line tools are already installed, use "Software Update" in System Settings to install updates
+bingalz@Brandons-Air ~ % cd Desktop
+bingalz@Brandons-Air Desktop % mkdir test
+mkdir: test: File exists
+bingalz@Brandons-Air Desktop % touch sample.txt
+bingalz@Brandons-Air Desktop % cd test
+bingalz@Brandons-Air test % ls
+example.txt
+bingalz@Brandons-Air test % cd ..
+bingalz@Brandons-Air Desktop % mv sample.txt test 
+bingalz@Brandons-Air Desktop % cd test
+bingalz@Brandons-Air test % ls
+example.txt	sample.txt
+bingalz@Brandons-Air test % cat ~/.ssh  
+bingalz@Brandons-Air test % cat ~/.ssh/id.ed25519.pub | pbcopy
+cat: /Users/bingalz/.ssh/id.ed25519.pub: No such file or directory
+bingalz@Brandons-Air test % cat ~/.ssh/id_rsa.pub | pbcopy
+bingalz@Brandons-Air test % cd ../data_class_1 
+bingalz@Brandons-Air data_class_1 % git clone git@git.bootcampcontent.com:University-of-California---Berkeley/UCB-VIRT-DATA-PT-08-2023-U-LOLC.git
+Cloning into 'UCB-VIRT-DATA-PT-08-2023-U-LOLC'...
+The authenticity of host 'git.bootcampcontent.com (34.212.254.168)' can't be established.
+ED25519 key fingerprint is SHA256:9BDZeUEdkrB47gs3sXOIzsO2/5r/hEvVfzgiEAZjTIU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'git.bootcampcontent.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 306, done.
+remote: Counting objects: 100% (303/303), done.
+remote: Compressing objects: 100% (269/269), done.
+remote: Total 306 (delta 16), reused 213 (delta 6), pack-reused 3
+Receiving objects: 100% (306/306), 64.92 MiB | 2.85 MiB/s, done.
+Resolving deltas: 100% (16/16), done.
+bingalz@Brandons-Air data_class_1 % echo "# ucb_1st_proj" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Bingalz/ucb_1st_proj.git
+git push -u origin main
+Initialized empty Git repository in /Users/bingalz/Desktop/data_class_1/.git/
+[main (root-commit) cb58557] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Username for 'https://github.com': git pull
+Password for 'https://git pull@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Bingalz/ucb_1st_proj.git/'
+bingalz@Brandons-Air data_class_1 % git clone git@github.com:Bingalz/ucb_1st_proj.git
+Cloning into 'ucb_1st_proj'...
+The authenticity of host 'github.com (192.30.255.113)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+warning: You appear to have cloned an empty repository.
+bingalz@Brandons-Air data_class_1 % ls
+README.md			UCB-VIRT-DATA-PT-08-2023-U-LOLC	ucb_1st_proj
+bingalz@Brandons-Air data_class_1 % git status 
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	UCB-VIRT-DATA-PT-08-2023-U-LOLC/
+	ucb_1st_proj/
+
+nothing added to commit but untracked files present (use "git add" to track)
+bingalz@Brandons-Air data_class_1 % ls -a
+.				.git				ucb_1st_proj
+..				README.md
+.DS_Store			UCB-VIRT-DATA-PT-08-2023-U-LOLC
+bingalz@Brandons-Air data_class_1 % ls
+README.md			UCB-VIRT-DATA-PT-08-2023-U-LOLC	ucb_1st_proj
+bingalz@Brandons-Air data_class_1 % cd ucb_1st_proj 
+bingalz@Brandons-Air ucb_1st_proj % cd ..
+bingalz@Brandons-Air data_class_1 % cd ucb_1st_proj 
+bingalz@Brandons-Air ucb_1st_proj % git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Bingalz/ucb_1st_proj.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/bingalz/Desktop/data_class_1/ucb_1st_proj/.git/
+fatal: pathspec 'README.md' did not match any files
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+error: remote origin already exists.
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:Bingalz/ucb_1st_proj.git'
+bingalz@Brandons-Air ucb_1st_proj % ls
+bingalz@Brandons-Air ucb_1st_proj % cd ..
+bingalz@Brandons-Air data_class_1 % ls
+README.md			UCB-VIRT-DATA-PT-08-2023-U-LOLC	ucb_1st_proj
+bingalz@Brandons-Air data_class_1 % ls -a
+.				.git				ucb_1st_proj
+..				README.md
+.DS_Store			UCB-VIRT-DATA-PT-08-2023-U-LOLC
+bingalz@Brandons-Air data_class_1 % rm .DS_Store
+bingalz@Brandons-Air data_class_1 % rm .git
+rm: .git: is a directory
+bingalz@Brandons-Air data_class_1 % rm README.md
+bingalz@Brandons-Air data_class_1 % rm -rf .git
+bingalz@Brandons-Air data_class_1 % ls -a
+.				UCB-VIRT-DATA-PT-08-2023-U-LOLC
+..				ucb_1st_proj
+bingalz@Brandons-Air data_class_1 % rm -rf ucb_1st_proj 
+bingalz@Brandons-Air data_class_1 % mkdir projects
+bingalz@Brandons-Air data_class_1 % cd projects 
+bingalz@Brandons-Air projects % echo "# ucb_1st_proj" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Bingalz/ucb_1st_proj.git
+git push -u origin main
+Initialized empty Git repository in /Users/bingalz/Desktop/data_class_1/projects/.git/
+[main (root-commit) cce4d87] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 222 bytes | 222.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Bingalz/ucb_1st_proj.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+bingalz@Brandons-Air projects % ls
+README.md
+bingalz@Brandons-Air projects % ls -a
+.		..		.git		README.md
+bingalz@Brandons-Air projects % cd ..
+bingalz@Brandons-Air data_class_1 % ls
+UCB-VIRT-DATA-PT-08-2023-U-LOLC	projects
+bingalz@Brandons-Air data_class_1 % ls -a
+.				UCB-VIRT-DATA-PT-08-2023-U-LOLC
+..				projects
+bingalz@Brandons-Air data_class_1 % cd projects
+bingalz@Brandons-Air projects % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+bingalz@Brandons-Air projects % ls
+README.md
+bingalz@Brandons-Air projects % vim README.me
+bingalz@Brandons-Air projects % git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+bingalz@Brandons-Air projects % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.me
+
+nothing added to commit but untracked files present (use "git add" to track)
+bingalz@Brandons-Air projects % git add -A
+bingalz@Brandons-Air projects % git commit -m "I made a change in the README to test the conenction"
+[main 75021d6] I made a change in the README to test the conenction
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.me
+bingalz@Brandons-Air projects % git push       
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Bingalz/ucb_1st_proj.git
+   cce4d87..75021d6  main -> main
+bingalz@Brandons-Air projects % 
